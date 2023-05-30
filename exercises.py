@@ -1,3 +1,14 @@
+def operation(firstNumber, secondNumber, operand):
+	if operand =="+":
+		resultado = firstNumber + secondNumber
+	elif operand == "-":
+		resultado = firstNumber - secondNumber
+	elif operand == "/":
+		resultado = firstNumber / secondNumber
+	elif operand == "*":
+		resultado = firstNumber * secondNumber
+	return resultado
+
 myList = []		#declarate list
 for i in range(5): 		#for to ask for te user to fill the list
 	num = int(input("Write the number you want to save in the position " + str(i) + ": "))		#asking the user to fill the list
@@ -20,3 +31,28 @@ myDictionary["Lastname"] = input(print("Write your last name: "))
 myDictionary["Age"] = input(print("Write your age: "))
 print("Printing the new data of the dictionary")
 print(myDictionary)
+sino = True
+print("\nNow we will do a math operation")
+while sino == True:
+	operand = input(print("Chose the operation you want to do(+,-,/,*)"))
+	if operand == "+":
+		print("suma")
+		sino = False
+		break
+	elif operand == "-":
+		print("resta")
+		sino == False
+		break
+	elif operand == "/":
+		print("division")
+		sino == False
+		break
+	elif operand == "*":
+		print("multiplicacion")
+		sino == False
+		break
+	else:
+		print("Wrong answer")
+firstNumber = int(input(print("Write the first number")))
+secondNumber = int(input(print("Write the second number")))
+print("The operation result is: " + str(operation(firstNumber, secondNumber, operand)))
