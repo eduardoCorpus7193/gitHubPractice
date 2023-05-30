@@ -12,3 +12,11 @@ i = 0		#restart i variable to 0
 while i < length:		#loop while
     print("The number saved in the tuple in the " + str(i) + " position is: " + str(myTuple[i]))		#printing the tupla's data
     i += 1		#increment i variable
+myDictionary = { "Name":"Eduardo","Lastname":"Corpus","Age":26 }
+print("Printing the data of the dictionary")
+print(myDictionary)
+myDictionary["Name"] = input(print("Write your name: "))
+myDictionary["Lastname"] = input(print("Write your last name: "))
+myDictionary["Age"] = input(print("Write your age: "))
+print("Printing the new data of the dictionary")
+print(myDictionary)
